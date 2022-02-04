@@ -1,0 +1,17 @@
+.quoteStyle {
+  border: 4px solid tomato;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: teal;
+}
+#quote {
+  width: 500px;
+
+  /* margin: auto; */
+}
+.quote-section {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  min-height: 100vh;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>more events</h2>
+    <section>
+        <h3 id="element">very very important secrate information </h3>
+        <input type="text" name="" id="input-value" placeholder="please type delete">
+        <button id="delete-info" disabled>Delete</button>
+
+    </section>
+
+    <!-- <script src="delete-information.js"></script> -->
+    <script>
+
+        document.getElementById("input-value").addEventListener("keyup", function (e) {
+
+            // const input_value = document.getElementById("input-value").value;
+            if (e.target.value == "delete") {
+                document.getElementById("delete-info").removeAttribute('disabled');
+            }
+            else {
+                document.getElementById("delete-info").setAttribute('disabled', true);
+            }
+
+        });
+
+
+        document.getElementById("delete-info").addEventListener("click", () => {
+            document.getElementById("element").style.display = "none";
+        })
+
+    </script>
+
+</body>
+
+</html>

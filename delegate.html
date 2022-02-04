@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Event delegate</h2>
+    <ul id="item-container">
+        <li class="item">Lorem, ipsum.</li>
+        <li class="item">Doloribus, illum!</li>
+        <li class="item">In, at.</li>
+        <li class="item">Ullam, deserunt.</li>
+        <li class="item">Amet, dicta.</li>
+        <li class="item">Numquam, magnam!</li>
+    </ul>
+    <input type="text" name="" id="add-text">
+    <button id="addComment">Add li</button>
+    <!-- <script src="delegate.js"></script> -->
+    <script>
+        // const items = document.getElementsByClassName('item');
+        // for (const item of items) {
+        //     item.addEventListener("click", (event) => {
+        //         // document.getElementById("item-container").removeChild(item);
+        //         event.target.parentNode.removeChild(event.target);
+
+        //     });
+        // }
+        // add li
+        document.getElementById("addComment").addEventListener("click", function (event) {
+            const list_item = document.createElement("li");
+            const list_value = list_item.innerText = document.getElementById("add-text").value;
+            document.getElementById("item-container").appendChild(list_item);
+            document.getElementById("add-text").value = "";
+            list_item.classList.add("item");
+            // event.stopPropagation();
+        });
+
+        document.getElementById("item-container").addEventListener("click", function (e) {
+            event.target.parentNode.removeChild(event.target);
+
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>

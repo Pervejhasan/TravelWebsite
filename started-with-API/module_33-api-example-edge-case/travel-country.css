@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(190, 187, 180);
+}
+
+#showCountries {
+  display: flex;
+  column-gap: 10px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+.country-details {
+  border: 3px solid teal;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  flex: 30%;
+}
+.style-image {
+  width: 150px;
+  border-radius: 10px;
+}

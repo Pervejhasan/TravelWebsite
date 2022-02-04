@@ -1,0 +1,29 @@
+#buddies {
+  display: flex;
+  column-gap: 15px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  margin-top: 100px;
+}
+body {
+  width: 80%;
+  margin: auto;
+}
+.content:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 5px rgba(39, 33, 33, 0.438);
+}
+.content {
+  flex: 30%;
+  border: 3px solid orangered;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: teal;
+  transition: 0.5s;
+}
+.image-style {
+  width: 100px;
+  border-radius: 50%;
+  border: 4px solid orange;
+}

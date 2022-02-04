@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+try{
+
+    add();
+    document.write("skipped code");
+}
+catch(e){
+    document.write("Message:"+e+"<br>");
+    document.write("Message:"+e.message+"<br>");
+    document.write("name:"+e.name+"<br>");
+    document.write("stack:"+e.stack+"<br>");
+
+}
+
+    </script>
+
+</body>
+</html>
+

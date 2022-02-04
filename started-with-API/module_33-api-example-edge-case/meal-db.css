@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(228, 225, 225);
+}
+.img-style {
+  border-radius: 10px;
+}
+.card2 {
+  padding: 10px;
+}
+.image-style-2 {
+  width: 100%;
+  border-radius: 10px;
+  margin: auto;
+}
