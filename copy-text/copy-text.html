@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Text</title>
+</head>
+<body>
+<h1 style="user-select:all;">Copy text Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rem vero totam pariatur sunt aliquam saepe reprehenderit corrupti eaque doloremque ratione soluta, iusto architecto? Assumenda totam quos quaerat fugiat veniam? Asperiores obcaecati beatae voluptate vitae doloremque aut eos cupiditate adipisci.</h1>
+<input type="text" id="input-field">
+<button id="copy-text">Copy</button>
+<script type="text/javascript">
+const input_text=document.getElementById("input-field");
+const butto=document.getElementById("copy-text");
+butto.onclick=function(){
+    input_text.select();
+document.execCommand("copy");
+}
+</script>
+</body>
+</html>

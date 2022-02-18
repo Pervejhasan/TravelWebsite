@@ -1,4 +1,41 @@
+
+console.log("ok");
+const searchbtn = document.getElementById("button-search");
+const searchInput = document.getElementById("search-field");
+console.log("ok");
+searchInput.addEventListener("keypress", function(event) {
+    // event.preventDefault();
+    console.log("pressed",event.key)
+    if (event.key == 'Enter' )
+   {
+    searchbtn.click();
+   }
+});
+
+
+
+
 function searchFood(){
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const searchField=document.getElementById("search-field");
@@ -28,6 +65,15 @@ else{
   
 
 }
+
+
+
+
+
+
+
+
+
 
 const displayfood = meals=>{
 
